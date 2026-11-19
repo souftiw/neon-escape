@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#070817">
+<title>NEON ESCAPE — Arcade Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◆</span> NEON <b>ESCAPE</b></div>
+    <div class="top-actions">
+      <button class="icon-btn" id="soundBtn" aria-label="Toggle sound">♫</button>
+      <button class="icon-btn" id="pauseBtn" aria-label="Pause game">Ⅱ</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="eyebrow">DODGE • COLLECT • SURVIVE</div>
+      <h1>Enter the <span>Neon Zone</span></h1>
+      <p>Move your energy core, avoid the hazards and collect gems. How long can you survive?</p>
+    </section>
+
+    <section class="game-card">
+      <div class="hud">
+        <div><small>SCORE</small><strong id="score">0</strong></div>
+        <div><small>BEST</small><strong id="best">0</strong></div>
+        <div><small>GEMS</small><strong id="gems">0</strong></div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game" aria-label="Neon Escape game area"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="panel">
+            <div class="panel-icon" id="panelIcon">✦</div>
+            <h2 id="panelTitle">NEON ESCAPE</h2>
+            <p id="panelText">Dodge the pink barriers. Collect golden gems. Stay alive.</p>
+            <button class="primary-btn" id="mainBtn">PLAY NOW <span>➜</span></button>
+            <div class="hint" id="hint">Drag / touch to move • Arrow keys or WASD</div>
+          </div>
+        </div>
+      </div>
+      <div class="underbar">
+        <span>◈ Endless arcade challenge</span>
+        <span id="levelLabel">LEVEL 1</span>
+      </div>
+    </section>
+
+    <section class="howto">
+      <div class="how-item"><i>↔</i><div><b>Simple controls</b><small>Touch, drag or use keys</small></div></div>
+      <div class="how-item"><i>⚡</i><div><b>Rising difficulty</b><small>Survive as speed increases</small></div></div>
+      <div class="how-item"><i>◇</i><div><b>Collect gems</b><small>Build your gem total</small></div></div>
+    </section>
+  </main>
+  <footer>NEON ESCAPE <span>•</span> A mini arcade game</footer>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

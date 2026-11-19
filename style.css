@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap');
+:root{--bg:#070817;--cyan:#21eaff;--pink:#f52dce;--purple:#8d4dff;--muted:#a8b1d4}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:radial-gradient(ellipse at 50% 0%,#17103d 0%,var(--bg) 58%);color:#fff;font-family:Rajdhani,Arial,sans-serif}
+body{padding:18px 14px 28px}
+button{font:inherit}
+.shell{max-width:900px;margin:auto}
+.topbar{height:54px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #27234d;margin-bottom:28px}
+.brand{font-family:Orbitron,Arial,sans-serif;font-weight:800;letter-spacing:2px;font-size:19px;color:var(--cyan);text-shadow:0 0 14px #0adfff}
+.brand b{color:#fff}
+.brand-mark{color:var(--pink);margin-right:7px}
+.top-actions{display:flex;gap:9px}
+.icon-btn{width:38px;height:36px;border:1px solid #4d3b8d;border-radius:10px;background:#11112b;color:var(--cyan);font-size:19px;box-shadow:0 0 12px #602cff33;cursor:pointer}
+.intro{text-align:center;margin:0 auto 22px;max-width:640px}
+.eyebrow{font:600 11px Orbitron,Arial,sans-serif;letter-spacing:4px;color:var(--pink);margin-bottom:9px}
+h1{font:800 clamp(25px,5vw,39px) Orbitron,Arial,sans-serif;margin:0 0 10px}
+h1 span{color:var(--cyan);text-shadow:0 0 18px #12dfff88}
+.intro p{color:var(--muted);font-size:17px;margin:0}
+.game-card{border:1px solid #6d3be5;border-radius:17px;background:#0a0c21;padding:12px;box-shadow:0 0 12px #6e2bff66,0 0 45px #6e2bff22}
+.hud{display:flex;justify-content:space-around;padding:5px 0 12px}
+.hud div{text-align:center;min-width:65px}
+.hud small{display:block;color:#9da5cb;font:600 10px Orbitron,Arial,sans-serif;letter-spacing:2px}
+.hud strong{display:block;color:var(--cyan);font:700 22px Orbitron,Arial,sans-serif;margin-top:4px}
+.hud div:nth-child(2) strong{color:#ffd84b}
+.hud div:nth-child(3) strong{color:var(--pink)}
+.canvas-wrap{position:relative;width:100%;height:min(62vh,510px);min-height:300px;border:1px solid #25336d;border-radius:10px;overflow:hidden;background:#05091c}
+canvas{display:block;width:100%;height:100%;touch-action:none}
+.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#050817b8;backdrop-filter:blur(4px);padding:18px}
+.overlay.hidden{display:none}
+.panel{max-width:390px;text-align:center;padding:24px 20px;border:1px solid #754aff;border-radius:16px;background:linear-gradient(145deg,#111432ed,#080b20f2);box-shadow:0 0 30px #7b35ff55}
+.panel-icon{font-size:30px;color:#ffe05c;text-shadow:0 0 15px #ffca35;margin-bottom:7px}
+.panel h2{font:800 clamp(20px,4vw,28px) Orbitron,Arial,sans-serif;margin:0 0 10px;color:var(--cyan);text-shadow:0 0 13px #00dfff88}
+.panel p{color:#c4c9e2;font-size:17px;line-height:1.35;margin:0 0 19px}
+.primary-btn{border:0;border-radius:9px;padding:13px 25px;background:linear-gradient(90deg,#00c8ed,#8c4cff);color:white;font:800 14px Orbitron,Arial,sans-serif;letter-spacing:1px;box-shadow:0 0 20px #00dfff55;cursor:pointer}
+.primary-btn span{margin-left:10px}
+.hint{font-size:13px;color:#a8aed0;margin-top:14px}
+.underbar{display:flex;justify-content:space-between;color:#a7afd0;font-size:13px;padding:10px 3px 0}
+#levelLabel{color:#ffd84b;font-family:Orbitron,Arial,sans-serif;font-size:11px}
+.howto{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.how-item{display:flex;align-items:center;gap:10px;padding:13px;border:1px solid #242751;border-radius:12px;background:#0c1027}
+.how-item i{font-style:normal;font-size:24px;color:var(--cyan);text-shadow:0 0 12px #00dfff;min-width:28px;text-align:center}
+.how-item b{display:block;font-size:15px}
+.how-item small{display:block;color:#9da5c8;font-size:12px}
+footer{text-align:center;color:#70799f;font:10px Orbitron,Arial,sans-serif;letter-spacing:2px;margin-top:22px}
+footer span{color:var(--pink);padding:0 7px}
+@media(max-width:560px){body{padding:10px 9px 20px}.topbar{margin-bottom:20px}.intro p{font-size:15px}.game-card{padding:8px}.canvas-wrap{height:57vh;min-height:310px}.howto{gap:6px}.how-item{padding:9px 6px;gap:5px;flex-direction:column;text-align:center}.how-item i{font-size:20px}.how-item b{font-size:13px}.how-item small{font-size:10px}.underbar{font-size:11px}}

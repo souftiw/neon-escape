@@ -1,0 +1,17 @@
+NEON ESCAPE — Example Standard License
+========================================
+
+This file is a starter license template, not legal advice. Review and adapt it before sale.
+
+The purchaser may:
+- Use the game in personal projects.
+- Modify the source code for their own projects.
+- Use the game in one end product, subject to the terms shown in the seller's listing.
+
+The purchaser may not:
+- Resell, share, sublicense, or redistribute the source files as a standalone product.
+- Claim the original source code was created by the purchaser.
+- Upload the unmodified source files to a public code or asset marketplace.
+
+The seller should clearly state whether commercial end-product use is included and whether
+an exclusive license is being sold. Do not sell the same rights as exclusive to multiple buyers.
